@@ -1,0 +1,318 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 14, 14);
+}
+
+/* Design Header part here */
+header{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center ;
+    box-shadow: 0px 2px 14px #111,0px 2px 34px #333;
+}
+
+#page-wrapper{
+    position: relative;
+}
+
+.logo{
+    margin-left: 30px;
+    width: 350px;
+}
+
+#header-img{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+   display: inline-block;
+   margin-right: 20px ; 
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: #001d9c;
+    transition: all 0.3s linear;
+}
+
+ul li a:visited{
+    color: #001d9c;
+}
+
+ul li a:hover{
+    color: #9ba9e5;
+    margin-right: 23px;
+    margin-left: 3px;
+}
+/* End Header Design */
+
+/* Design Form section */
+.submit-email h2{
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+    color: rgb(9, 116, 255);
+}
+
+form{
+    min-width: 200px;
+    width: 30%;
+    margin: 10px auto;
+    margin-bottom: 0px;
+}
+
+.email{
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: #333;
+    font-size: 16px;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.email:focus{
+    outline: none;
+    background-color: rgb(9, 116, 255);
+    color: rgb(15, 14, 14);
+    
+}
+
+.submit{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin: 5px auto;
+    margin-bottom: 0px;
+    color: rgb(15, 14, 14);
+    background: rgb(9, 116, 255);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.submit:hover{
+    color: rgb(9, 116, 255);
+    background: transparent;
+    border: 2px solid rgb(9,116,255);
+}
+
+.submit:active{
+    outline: none;
+}
+/* End design form */
+
+/* Design feature Section */
+.feature{
+    margin-top: 40px;
+    padding-top: 95px;
+}
+
+.title{
+    color: rgb(9, 116, 255);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -40px;
+}
+
+.card-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    min-width: 200px;
+    width: 30%;
+    background: black;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #001d9c;
+    min-height: 300px;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+}
+
+.card h3{
+    color: rgb(9, 116, 255);
+}
+
+.card p{
+    color: #9ba9e5;
+}
+
+.card-logo{
+    margin-bottom: 20px;
+    transform: translate(0%,-70%);
+    z-index: -1;
+}
+
+i{
+    color: rgb(9, 116, 255);
+    font-size: 50px;
+    z-index: -1;
+}
+/* End design feature section */
+
+/* Design service section */
+.service{
+    margin: 20px;
+}
+
+.service-title{
+    text-align: center;
+    color: rgb(9, 116, 255)
+}
+
+#video{
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%,0px);
+    width: 80%;
+}
+
+/* End design service section */
+
+/* Design buy section */
+
+.buy{
+    margin: 20px 0px;
+}
+
+.buy-title{
+    text-align: center;
+    color: rgb(9, 116, 255);
+}
+
+.buy-card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.buy-card{
+    min-width: 200px;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid rgb(9, 116, 255);
+    margin-top: 10px;
+    height: 280px;
+    text-align: center;
+    color: #9ba9e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.buy-card h2{
+    color: rgb(9, 116, 255);
+    text-align: center;
+}
+
+.buy-card h3{
+    color: rgb(1, 6, 245);
+    font-size: 30px;
+}
+/* End Buy card design */
+
+/* Design Footer */
+footer{
+    background: black;
+    padding: 8px;
+    color: rgb(9, 116, 255);
+    text-align: right;
+}
+
+/* Media Query For 750px */
+@media screen and (max-width: 750px){
+    /* Design Header */
+    header{
+        flex-direction: column;
+    }
+
+    header .logo{
+        margin: 0px;
+        width: 200px;
+    }
+
+    ul{
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        margin-left: 9px ;
+    }
+
+    header nav ul li a{
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    header nav ul li a:hover{
+        margin-right: 18px;
+    }
+    /* End Design Header */
+
+    /* Design Form */
+    .email{
+        width: 70%;
+        position: relative;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%,0%);
+        border-radius: 5px;
+    }
+
+    .submit{
+        width: 50%;
+        border-radius: 5px;
+    }
+    /* Design From */
+
+    /*Design Card container */
+    .card{
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width : 450px){
+    /* Design card */
+    .card{
+        width: 90%;
+    }
+    /* End Design Card */
+
+    /* Design Buy card */
+    .buy-card{
+        width: 90%;
+    }
+}

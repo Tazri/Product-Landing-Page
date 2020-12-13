@@ -1,0 +1,17 @@
+>>>This project for freecodecamp.I want to complate freecodecamp responsive wev design project.
+
+
+>>>HTML Requirment for this project.
+
+>1/ <header> element with 'header' id now inside header should was
+    >>> <img/> element with 'header-img' id
+    >>> <nav> element with 'nav-bar' id.inside the nav
+        >>>3 clickable <a> element with 'nav-link'
+        >>> nav element shoud be clickable 
+
+>2/ <video> element should be was in this project with 'video' id.
+
+>3/ <form> element width form id. inside the form
+    >>> <input> element type for email and with placeholder and it required
+    >>> <input> element type for submit with id 'submit' and action will be  https://www.freecodecamp.com/email-submit
+    
